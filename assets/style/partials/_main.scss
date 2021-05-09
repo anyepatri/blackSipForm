@@ -1,0 +1,95 @@
+main{
+    margin-top: 50px;
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        .containForm{
+            display: flex;
+            flex-direction: column;
+            .boxInfo{
+                display: flex;
+                margin-bottom: 15px;
+                select{
+                    display: none;
+                }
+                .containerIconos{
+                    width: 60px;
+                    height: 40px;
+                    background-color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color: white;
+                        font-size: 30px;
+                    }
+                }
+                .input, .listaColonia{
+                    width: 100%;
+                    height: inherit;
+                    #select{
+                        width: inherit;
+                        height: 40px;
+                    }
+                }
+                .listaColonia{
+                    display: none;
+                }
+            }
+        }
+        .msj{
+            display: none;
+            margin-left: 5%;
+        }
+        .botones{
+            display: flex;
+            button{
+                margin-right: 10px;
+                background-color: black;
+                color: white;
+                height: 40px;
+            }
+        }
+        .inputCheck{
+            display: flex;
+            margin-top: 15px;
+            .verificacion{
+                span{
+                    border: 1px gray solid;
+                    border-radius: 30%;
+                    i{
+                        color: #92000A;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(min-width:1000px) {
+    main{
+        form{
+            .containForm{
+                justify-content: space-around;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                .boxInfo{
+                    width: 40%;
+                    .input{
+                        width: 100%;
+                    }
+                }
+            }
+            .botones, .inputCheck{
+                margin-left: 5%;
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+}

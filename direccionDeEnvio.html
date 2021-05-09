@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direccion de Envio</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <h3>direccion de envio</h3>
+    </header>
+    <main>
+        <form id="form">
+            <div class="containForm">
+                <div for="name" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" name="name" placeholder="Nombre" class="input" id="nombre" required>
+                </div>
+                <div for="lastName" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" name="lastName" placeholder="Apellido" class="input" id="apellido" required>
+                </div>
+
+                <div for="email" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-envelope-square"></i>
+                    </label>
+                    <input type="email" name="email" placeholder="Correo Electronico" class="input" id="email" required>
+                </div>
+                
+                <div for="phone" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-phone-alt"></i>
+                    </label>
+                    <input type="number" name="phone" placeholder="Numero de telefono" class="input" id="tel" required>
+                </div>
+                
+                <div for="postalCode" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="number" name="postalCode" placeholder="Codigo postal" id="postalCode" class="input" required>
+                </div>
+
+                <div for="colonies" class="boxInfo" id="coloniesBox">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="text" placeholder="Colonies" class="inputColonies input" id="colonies" readonly>
+                    <select name="colonies" id="coloniesSelect" class="input" onchange="ShowSelected();">
+                    </select>
+                </div>
+
+                <div for="stateRegion" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="text" name="stateRegion" placeholder="Estado/Region" id="estadoRegion" class="input" required>
+                </div>
+
+                <div for="city" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="text" name="city" placeholder="Ciudad" id="ciudad" class="input" required>
+                </div>
+
+                <div for="municipalityDelegation" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="text" name="municipalityDelegation" placeholder="Delegacion o municipio" id="delegacionMunicipio" class="input" required>
+                </div>
+
+                <div for="street" class="boxInfo">
+                    <label class="containerIconos">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </label>
+                    <input type="text" name="street" placeholder="Calle" class="input" id="calle" required>
+                </div>
+            </div>
+            <div class="msj"></div>
+            <div class="botones">
+                <button id="lib" tabindex="-1">Libreta de direcciones</button>
+                <button type="submit" id="submit">Guardar</button>
+            </div>
+
+            <div class="inputCheck">
+                <label for="verificacion" class="verificacion">
+                    <span><i class="fas fa-check"></i></span>
+                    Utilizar como direccion de facturacion
+                </label>
+            </div>
+        </form>
+    </main>
+      <script src="https://kit.fontawesome.com/22e3b6f93f.js" crossorigin="anonymous"></script>
+      <script src="./assets/js/index.js"></script>
+</body>
+</html>

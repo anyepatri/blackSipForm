@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    border-bottom: 2px black solid;
+    align-items: center;
+    justify-content: center;
+    h3{
+        text-transform: uppercase;
+    }
+}
+
+@media screen and(min-width:1000px) {
+    header{
+        padding-left: 50px;
+        align-items: flex-start;
+    }
+}

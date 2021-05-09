@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px gray solid;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  border-bottom: 2px black solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h3 {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding-left: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+main {
+  margin-top: 50px;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main form .containForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form .containForm .boxInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+main form .containForm .boxInfo select {
+  display: none;
+}
+
+main form .containForm .boxInfo .containerIconos {
+  width: 60px;
+  height: 40px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form .containForm .boxInfo .containerIconos i {
+  color: white;
+  font-size: 30px;
+}
+
+main form .containForm .boxInfo .input, main form .containForm .boxInfo .listaColonia {
+  width: 100%;
+  height: inherit;
+}
+
+main form .containForm .boxInfo .input #select, main form .containForm .boxInfo .listaColonia #select {
+  width: inherit;
+  height: 40px;
+}
+
+main form .containForm .boxInfo .listaColonia {
+  display: none;
+}
+
+main form .msj {
+  display: none;
+  margin-left: 5%;
+}
+
+main form .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main form .botones button {
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+  height: 40px;
+}
+
+main form .inputCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+main form .inputCheck .verificacion span {
+  border: 1px gray solid;
+  border-radius: 30%;
+}
+
+main form .inputCheck .verificacion span i {
+  color: #92000A;
+}
+
+@media screen and (min-width: 1000px) {
+  main form .containForm {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  main form .containForm .boxInfo {
+    width: 40%;
+  }
+  main form .containForm .boxInfo .input {
+    width: 100%;
+  }
+  main form .botones, main form .inputCheck {
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
